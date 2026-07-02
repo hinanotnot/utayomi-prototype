@@ -1,11 +1,14 @@
 <svg viewBox="0 0 393 110" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-  <path d="M0 78 C65 38 150 32 232 74 L232 110 L0 110 Z"
-        fill="#FFF7E6"/>
-  <path d="M0 78 C65 38 150 32 232 74"
-        fill="none" stroke="#111" stroke-width="4" stroke-linecap="round"/>
+  <path d="M0 78 C65 38 150 32 232 74 L232 110 L0 110 Z" fill="#FFF7E6"/>
+  <path d="M0 78 C65 38 150 32 232 74" fill="none" stroke="#111" stroke-width="4" stroke-linecap="round"/>
 
-  <path d="M150 76 C200 22 305 16 393 72 L393 110 L150 110 Z"
-        fill="#B7CA68"/>
-  <path d="M150 76 C200 22 305 16 393 72"
-        fill="none" stroke="#111" stroke-width="4" stroke-linecap="round"/>
+  <path d="M0 94
+           C70 94 118 92 150 76
+           C200 22 305 16 393 72
+           L393 110 L0 110 Z" fill="#B7CA68"/>
+  <path d="M0 94
+           C70 94 118 92 150 76
+           C200 22 305 16 393 72"
+        fill="none" stroke="#111" stroke-width="4"
+        stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
