@@ -1,0 +1,10 @@
+{
+  "name": "うたよみー",
+  "short_name": "うたよみー",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#38bff3",
+  "theme_color": "#38bff3",
+  "orientation": "portrait",
+  "icons": []
+}
