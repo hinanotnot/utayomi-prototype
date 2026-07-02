@@ -1,1 +1,83 @@
-<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>うたよみー v1.0</title><link rel="stylesheet" href="style.css"></head><body><div class="app"><header><div class="sky"><img class="cloud cloud-left" src="cloud.svg"><img class="cloud cloud-right" src="cloud.svg"><div class="logo">うたよみー</div><div class="landscape"><img src="hills.svg"></div><div class="tabs"><button class="tab active" data-home="friend">ともだち</button><button class="tab" data-home="walk">おさんぽ</button></div></div></header><main id="main" class="main"><section id="friend"><div class="greet"><div class="miso"></div><div class="bubble">今日はどんな一日だった？</div></div><div class="card"><div class="photo"></div><div class="tanka">風吹けば　小さな帽子　追いかけて　笑う背中に　春が駆けゆく</div><div class="info">♡12　💬3</div></div></section><section id="walk" hidden><div class="greet"><div class="miso"></div><div class="bubble">季節のうたを探しに行こう。</div></div></section></main><nav><div>🔍<br>さがす</div><div>✍️<br>詠む</div><div>📚<br>アルバム</div></nav></div><script src="app.js"></script></body></html>
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>うたよみー v1.1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app friend-mode">
+  <header class="header">
+    <div class="sky">
+      <div class="cloud cloud-left"></div>
+      <div class="cloud cloud-right"></div>
+      <div class="logo">うたよみー</div>
+
+      <svg class="landscape" viewBox="0 0 393 116" preserveAspectRatio="none" aria-hidden="true">
+        <g class="friend-layout">
+          <path class="walk hill-back" d="M178 78 C210 42 255 36 311 43 C355 48 377 76 393 78 L393 116 L174 116 Z"/>
+          <path class="walk-line hill-back-line" d="M178 78 C210 42 255 36 311 43 C355 48 377 76 393 78"/>
+          <path class="friend hill-front" d="M0 84 C26 78 42 36 94 22 C145 8 190 18 208 60 C215 76 204 91 174 96 C118 107 42 105 0 104 Z"/>
+          <path class="friend-line hill-front-line" d="M0 84 C26 78 42 36 94 22 C145 8 190 18 208 60 C215 76 204 91 174 96"/>
+          <path class="join-line" d="M174 96 C124 104 56 103 0 103"/>
+        </g>
+
+        <g class="walk-layout">
+          <path class="friend hill-back" d="M0 89 C36 78 57 55 107 48 C144 43 178 55 195 75 C203 88 188 98 145 101 C89 104 36 103 0 103 Z"/>
+          <path class="friend-line hill-back-line" d="M0 89 C36 78 57 55 107 48 C144 43 178 55 195 75 C203 88 188 98 145 101"/>
+          <path class="walk hill-front" d="M157 96 C177 48 220 20 286 19 C342 18 374 49 393 76 L393 104 C329 105 238 106 157 96 Z"/>
+          <path class="walk-line hill-front-line" d="M157 96 C177 48 220 20 286 19 C342 18 374 49 393 76"/>
+          <path class="join-line" d="M157 96 C230 104 327 104 393 103"/>
+        </g>
+      </svg>
+
+      <div class="tabs">
+        <button class="tab active" data-home="friend">ともだち</button>
+        <button class="tab" data-home="walk">おさんぽ</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="main">
+    <section id="friend" class="panel">
+      <div class="greet">
+        <div class="miso"></div>
+        <div class="bubble">今日はどんな一日だった？</div>
+      </div>
+
+      <article class="card">
+        <div class="photo photo-spring"></div>
+        <div class="tanka">風吹けば　小さな帽子　追いかけて　笑う背中に　春が駆けゆく</div>
+        <div class="info"><span>♡ 12</span><span>💬 3</span></div>
+      </article>
+
+      <div class="peek"></div>
+    </section>
+
+    <section id="walk" class="panel" hidden>
+      <div class="greet">
+        <div class="miso"></div>
+        <div class="bubble">季節のうたを探しに行こう。</div>
+      </div>
+
+      <article class="card">
+        <div class="photo photo-green"></div>
+        <div class="tanka">雨あがり　空を映して　水たまり　今日の一首を　連れて帰ろう</div>
+        <div class="info"><span>♡ 8</span><span>💬 1</span></div>
+      </article>
+
+      <div class="peek"></div>
+    </section>
+  </main>
+
+  <nav class="bottom-nav">
+    <div><span class="icon">🔍</span>さがす</div>
+    <div><span class="icon">✍️</span>詠む</div>
+    <div><span class="icon">📚</span>アルバム</div>
+  </nav>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<svg viewBox="0 0 393 110" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+  <path d="M155 72 C200 22 300 22 393 78 L393 110 L155 110 Z"
+        fill="#B7CA68"/>
+  <path d="M155 72 C200 22 300 22 393 78"
+        fill="none" stroke="#111" stroke-width="4" stroke-linecap="round"/>
+
+  <path d="M0 74 C55 30 142 18 220 70 L220 110 L0 110 Z"
+        fill="#FFF7E6"/>
+  <path d="M0 74 C55 30 142 18 220 70"
+        fill="none" stroke="#111" stroke-width="4" stroke-linecap="round"/>
+</svg>
