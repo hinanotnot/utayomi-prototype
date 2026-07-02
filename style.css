@@ -303,30 +303,65 @@ body{
   font-size:15px !important;
 }
 
-/* v1.6 短歌カード */
+/* v1.7 短歌カードのみ修正：写真なし・2列縦書き */
 .card{
-  display:grid;
+  width:min(82vw,380px);
+  aspect-ratio:1/1;
+  display:grid !important;
   grid-template-rows:9fr 1fr !important;
+  background:#fffaf0;
+  border:none !important;
+  border-radius:24px;
+  overflow:hidden;
+  box-shadow:0 8px 24px rgba(0,0,0,.10);
 }
-.photo{display:none !important;}
+
+.photo{
+  display:none !important;
+}
 
 .tanka{
+  height:auto !important;
+  min-height:0;
   display:flex !important;
   flex-direction:row-reverse;
-  justify-content:center;
-  align-items:center;
-  gap:1.4em;
+  justify-content:center !important;
+  align-items:center !important;
+  gap:2.4em;
   writing-mode:horizontal-tb !important;
+  text-orientation:mixed;
+  font-size:20px !important;
+  line-height:2.05 !important;
+  font-weight:500 !important;
+  letter-spacing:.06em !important;
   padding:0 !important;
+  background:
+    linear-gradient(rgba(255,250,240,.94),rgba(255,250,240,.94)),
+    radial-gradient(circle at 22% 16%,rgba(238,224,190,.18),transparent 30%),
+    radial-gradient(circle at 76% 84%,rgba(255,225,164,.13),transparent 30%);
 }
-.tanka .line,
-.tanka{
-  background:linear-gradient(rgba(255,253,247,.92),rgba(255,253,247,.92));
+
+.tanka-line{
+  writing-mode:vertical-rl;
+  text-orientation:upright;
+  white-space:pre-wrap;
 }
-.tanka{
-  font-size:17px !important;
-}
+
 .info{
+  height:auto !important;
+  min-height:0;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:space-around !important;
+  gap:0 !important;
+  font-size:18px !important;
+  color:#4a4a4a;
   border-top:none !important;
-  background:linear-gradient(rgba(255,253,247,.92),rgba(255,253,247,.92)) !important;
+  background:
+    linear-gradient(rgba(255,250,240,.94),rgba(255,250,240,.94)),
+    radial-gradient(circle at 76% 84%,rgba(255,225,164,.13),transparent 30%) !important;
+}
+
+.peek{
+  width:min(82vw,380px);
 }
