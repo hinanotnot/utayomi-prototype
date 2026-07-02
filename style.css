@@ -191,3 +191,75 @@ body{
   .bubble{font-size:17px;padding:11px 18px}
   .tanka{font-size:20px}
 }
+
+/* v1.4 短歌カード調整 */
+.card{
+  width:min(78vw,370px);
+  background:#fffdf7;
+  border:2.5px solid var(--ink);
+  border-radius:22px;
+  box-shadow:0 5px 14px rgba(0,0,0,.055);
+}
+
+.photo{
+  height:18%;
+  opacity:1;
+  filter:none;
+  position:relative;
+  overflow:hidden;
+}
+
+.photo::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  backdrop-filter:blur(8px);
+  background:rgba(255,255,255,.22);
+}
+
+.photo-spring{
+  background:
+    radial-gradient(circle at 18% 45%,rgba(255,255,255,.8) 0 7%,transparent 8%),
+    radial-gradient(circle at 62% 35%,rgba(255,255,255,.55) 0 5%,transparent 6%),
+    linear-gradient(135deg,#f3ca5a 0%,#e8dd8f 34%,#b9dc83 70%,#7fc46e 100%);
+}
+
+.photo-green{
+  background:
+    radial-gradient(circle at 28% 42%,rgba(255,255,255,.68) 0 7%,transparent 8%),
+    linear-gradient(135deg,#d6efb8 0%,#9acb73 58%,#6faf62 100%);
+}
+
+.tanka{
+  height:66%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  writing-mode:vertical-rl;
+  text-orientation:upright;
+  font-size:19px;
+  line-height:2.35;
+  font-weight:800;
+  letter-spacing:.11em;
+  padding:10px 0;
+  background:
+    linear-gradient(rgba(255,253,247,.86),rgba(255,253,247,.86)),
+    radial-gradient(circle at 22% 12%,rgba(238,224,190,.26),transparent 30%),
+    radial-gradient(circle at 82% 80%,rgba(255,225,164,.18),transparent 32%);
+}
+
+.info{
+  height:16%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:48px;
+  font-size:16px;
+  color:#4a4a4a;
+  border-top:1px solid rgba(0,0,0,.10);
+  background:#fffaf0;
+}
+
+.peek{
+  width:min(78vw,370px);
+}
