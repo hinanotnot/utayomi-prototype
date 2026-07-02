@@ -59,10 +59,11 @@ body{
   position:absolute;
   left:0;
   right:0;
-  bottom:7px;
+  bottom:23px;
   display:grid;
   grid-template-columns:1fr 1fr;
   z-index:4;
+  pointer-events:none;
 }
 .tab{
   border:0;
@@ -71,10 +72,11 @@ body{
   font-weight:800;
   color:#222;
   opacity:.48;
-  padding:24px 0 8px;
+  padding:10px 0 8px;
   -webkit-tap-highlight-color:transparent;
   outline:none;
   transition:opacity .18s ease, transform .18s ease;
+  pointer-events:auto;
 }
 .tab.active{opacity:1}
 .tab.active::after{
@@ -175,7 +177,8 @@ body{
   .sky{height:186px}
   .logo{font-size:38px;top:21px}
   .landscape{height:104px}
-  .tab{font-size:19px;padding-top:22px}
+  .tabs{bottom:21px}
+  .tab{font-size:19px}
   .bubble{font-size:17px;padding:11px 18px}
   .tanka{font-size:20px}
 }
