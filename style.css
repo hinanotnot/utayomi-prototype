@@ -263,3 +263,42 @@ body{
 .peek{
   width:min(78vw,370px);
 }
+
+/* v1.5 短歌カード比率・中央配置修正 */
+.card{
+  width:min(78vw,370px);
+  aspect-ratio:1/1;
+  display:grid;
+  grid-template-rows:1fr 8fr 1fr;
+  background:#fffdf7;
+}
+
+.photo{
+  height:auto !important;
+  min-height:0;
+}
+
+.tanka{
+  height:auto !important;
+  min-height:0;
+  display:grid !important;
+  place-items:center !important;
+  writing-mode:vertical-rl;
+  text-orientation:upright;
+  font-size:17px !important;
+  line-height:2.45 !important;
+  letter-spacing:.10em !important;
+  font-weight:800;
+  padding:0 !important;
+  text-align:center;
+}
+
+.info{
+  height:auto !important;
+  min-height:0;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  gap:44px;
+  font-size:15px !important;
+}
