@@ -1,0 +1,1 @@
+const tabs=[...document.querySelectorAll('.tab')],friend=document.getElementById('friend'),walk=document.getElementById('walk');tabs.forEach((t,i)=>t.onclick=()=>{tabs.forEach((x,j)=>x.classList.toggle('active',i===j));friend.hidden=i!==0;walk.hidden=i===0;document.getElementById('main').style.background=i===0?'#fffaf0':'#b7ca68';});
