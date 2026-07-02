@@ -365,3 +365,68 @@ body{
 .peek{
   width:min(82vw,380px);
 }
+
+/* v1.8 短歌カード修正：縦書き2列・写真なし・情報線なし */
+.card{
+  width:min(82vw,380px) !important;
+  aspect-ratio:1/1 !important;
+  display:grid !important;
+  grid-template-rows:9fr 1fr !important;
+  background:#fffaf0 !important;
+  border:2.5px solid var(--ink) !important;
+  border-radius:24px !important;
+  overflow:hidden !important;
+  box-shadow:0 8px 24px rgba(0,0,0,.10) !important;
+}
+
+.photo{
+  display:none !important;
+}
+
+.tanka{
+  height:auto !important;
+  min-height:0 !important;
+  display:flex !important;
+  flex-direction:row-reverse !important;
+  justify-content:center !important;
+  align-items:center !important;
+  gap:2.2em !important;
+  writing-mode:horizontal-tb !important;
+  text-orientation:mixed !important;
+  font-size:18px !important;
+  line-height:1.9 !important;
+  font-weight:600 !important;
+  letter-spacing:.04em !important;
+  padding:0 !important;
+  background:#fffaf0 !important;
+  text-align:left !important;
+}
+
+.tanka-line{
+  writing-mode:vertical-rl !important;
+  text-orientation:upright !important;
+  white-space:nowrap !important;
+  display:block !important;
+  line-height:1.9 !important;
+}
+
+.tanka-line br{
+  display:block !important;
+}
+
+.info{
+  height:auto !important;
+  min-height:0 !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:space-around !important;
+  gap:0 !important;
+  font-size:18px !important;
+  color:#4a4a4a !important;
+  border-top:none !important;
+  background:#fffaf0 !important;
+}
+
+.peek{
+  width:min(82vw,380px) !important;
+}
