@@ -302,3 +302,31 @@ body{
   gap:44px;
   font-size:15px !important;
 }
+
+/* v1.6 短歌カード */
+.card{
+  display:grid;
+  grid-template-rows:9fr 1fr !important;
+}
+.photo{display:none !important;}
+
+.tanka{
+  display:flex !important;
+  flex-direction:row-reverse;
+  justify-content:center;
+  align-items:center;
+  gap:1.4em;
+  writing-mode:horizontal-tb !important;
+  padding:0 !important;
+}
+.tanka .line,
+.tanka{
+  background:linear-gradient(rgba(255,253,247,.92),rgba(255,253,247,.92));
+}
+.tanka{
+  font-size:17px !important;
+}
+.info{
+  border-top:none !important;
+  background:linear-gradient(rgba(255,253,247,.92),rgba(255,253,247,.92)) !important;
+}
